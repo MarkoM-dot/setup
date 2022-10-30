@@ -1,0 +1,11 @@
+- hosts: localhost
+  connection: local
+  become: true
+
+  tasks:
+  - name: gitconfig
+    copy:
+      src: files/gitconfig
+      dest: "$HOME/.gitconfig"
+      owner: marko
+      group: marko 
