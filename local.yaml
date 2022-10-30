@@ -12,6 +12,3 @@
       src: files/gitconfig
       dest: $HOME/.gitconfig"
       remote_src: yes
-
-  - name: debug home
-    debug: $HOME
