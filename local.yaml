@@ -11,5 +11,3 @@
     copy:
       src: files/gitconfig
       dest: "$HOME/.gitconfig"
-      owner: marko
-      group: marko 
