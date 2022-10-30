@@ -15,7 +15,9 @@ if ! [[ -f "$HOME/.ssh/id_rsa" ]]; then
 	exit 1
 fi
 
-if ! [[ -f "$HOME/.gitconfig" ]]; then
-	echo "File: .gitconfig not found!" >&2
-	exit 1
-fi
+# Writing files to CICD machines isn't so simple
+# might even be a security issue
+#if ! [[ -f "$HOME/.gitconfig" ]]; then
+#	echo "File: .gitconfig not found!" >&2
+#	exit 1
+#fi
