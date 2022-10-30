@@ -10,7 +10,7 @@
     check_mode: no
 
   - name: debug home dir
-    debug: ver=home_dir
+    debug: var=home_dir
 
   - name: install gh
     package:
