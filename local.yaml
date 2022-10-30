@@ -10,5 +10,5 @@
   - name: gitconfig
     copy:
       src: files/gitconfig
-      dest: "~/.gitconfig"
+      dest: $HOME/.gitconfig
       remote_src: yes
