@@ -13,3 +13,4 @@
       dest: "$HOME/{{ item }}"
     loop:
       - .gitconfig
+      - .bash_aliases
