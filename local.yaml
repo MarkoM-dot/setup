@@ -9,6 +9,9 @@
     changed_when: false
     check_mode: no
 
+  - name: debug home dir
+    debug: ver=home_dir
+
   - name: install gh
     package:
       name: gh
