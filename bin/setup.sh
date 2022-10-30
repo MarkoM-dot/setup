@@ -16,4 +16,4 @@ if ! [[ -f "SSH_DIR/id_rsa" ]]; then
     	chmod 600 "$SSH_DIR/authorized_keys"
 fi
 
-ansible-pull -U https://github.com/MarkoM-dot/setup.git
+ansible-pull -U https://github.com/MarkoM-dot/setup.git local.yaml
