@@ -4,6 +4,12 @@ if ! [ -x "$(command -v ansible)" ]; then
        exit 1
 fi
 
+if ! [ -x "$(command -v gh)" ]; then
+       echo "gh not installed!" >&2
+       exit 1
+fi
+
+
 if ! [[ -f "$HOME/.ssh/id_rsa" ]]; then
 	echo "No ssh key found!" >&2
 	exit 1
