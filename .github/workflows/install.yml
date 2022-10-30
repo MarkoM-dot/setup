@@ -21,7 +21,8 @@ jobs:
 
       - name: Show home dir
         run: |
-          ls -la
+          ls -la $HOME
+          ls -la ~
 
       - name: Run tests
         run: |

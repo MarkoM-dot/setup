@@ -10,4 +10,4 @@
   - name: gitconfig
     copy:
       src: files/gitconfig
-      dest: "$HOME/.gitconfig"
+      dest: "~/.gitconfig"
