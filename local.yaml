@@ -9,6 +9,7 @@
 
   - name: gitconfig
     copy:
-      src: gitconfig
-      dest: $HOME/.gitconfig
-      remote_src: yes
+      src: "{{ item }}"
+      dest: "$HOME/{{ item }}"
+    loop:
+      - .gitconfig
