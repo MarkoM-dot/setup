@@ -15,3 +15,5 @@ if ! [[ -f "SSH_DIR/id_rsa" ]]; then
     	cat "$SSH_DIR/id_rsa.pub" >> "$SSH_DIR/authorized_keys"
     	chmod 600 "$SSH_DIR/authorized_keys"
 fi
+
+ansible-pull -U https://github.com/MarkoM-dot/setup.git
