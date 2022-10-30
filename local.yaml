@@ -3,6 +3,12 @@
   become: true
 
   tasks:
+  - name: home dir
+    shell: "echo $HOME"
+    register: home_dir
+    changed_when: false
+    check_mode: no
+
   - name: install gh
     package:
       name: gh
@@ -10,5 +16,5 @@
   - name: gitconfig
     copy:
       src: files/gitconfig
-      dest: $HOME/.gitconfig
+      dest: {{ home_dir }}/.gitconfig
       remote_src: yes
