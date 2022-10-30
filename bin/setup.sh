@@ -3,7 +3,7 @@ set -e
 
 SSH_DIR="$HOME/.ssh"
 
-if ! [-x "$(command -v ansible)" ]; then
+if ! [ -x "$(command -v ansible)" ]; then
 	sudo apt update -y
 	sudo apt install -y ansible
 fi
