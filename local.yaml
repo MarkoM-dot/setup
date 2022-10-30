@@ -16,5 +16,5 @@
   - name: gitconfig
     copy:
       src: files/gitconfig
-      dest: {{ home_dir }}/.gitconfig
+      dest: "{{ home_dir }}/.gitconfig"
       remote_src: yes
